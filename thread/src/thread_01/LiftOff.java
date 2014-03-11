@@ -5,15 +5,14 @@ package thread_01;
  */
 public class LiftOff implements Runnable {
     private int countDown = 10;
-    private int taskCount = 0;
-    private final int id = taskCount++;
+    private int id;
 
     public LiftOff() {
 
     }
 
-    public LiftOff(int countDown) {
-        this.countDown = countDown;
+    public LiftOff(int id) {
+        this.id = id;
     }
 
     public String status() {
